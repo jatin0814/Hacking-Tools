@@ -1,6 +1,5 @@
 import subprocess,re
 
-
 networks = subprocess.getoutput("netsh wlan show profile")
 networks_list = re.findall("(?:Profile\s*:\s*)(.*)",networks)
 
